@@ -6,10 +6,7 @@
 #include <unistd.h>
 
 char dot = 'o';
-/**
- * object to contain 'tile' on the board
- *
- */
+
 class Tile {
 private:
 	WINDOW *win;
@@ -18,10 +15,6 @@ private:
 	int selected;
 
 public:
-	//WINDOW *win;
-	//int val;
-	//int open;
-
 	Tile(int num) {
 		val = num;
 		open = 1;
@@ -173,9 +166,7 @@ public:
 		return selected;
 	}
 };
-/**
- * object to contain a die's value and window
- */
+
 class Die {
 public:
 	WINDOW *win;
